@@ -26,6 +26,7 @@ brew "pcre"
 brew "phantomjs"
 brew "pkg-config"
 brew "postgresql", restart_service: true
+brew "python3"
 brew "rbenv"
 brew "reattach-to-user-namespace" # fix for tmux on macOS
 brew "ruby-build"
