@@ -22,7 +22,8 @@ cmd.run 'npm install -g htmlhint stylelint jshint coffeelint jsonlint pug-lint'
 # dotfiles
 cmd.run 'cp "$(brew --prefix git)/etc/bash_completion.d"/* "$HOME"'
 cmd.run 'cp -R ./dotfiles/ "$HOME"'
-cmd.run 'defaults read com.googlecode.iterm2'
+cmd.run 'open -a iTerm && pkill iTerm'
+cmd.run 'cp -R ./dotfiles/okasso-iterm-profile ~/Library/Application\ Support/iTerm2/DynamicProfiles/'
+cmd.run 'defaults read -app iTerm'
 
 # launch iTerm2
-cmd.run 'open -a iTerm'
