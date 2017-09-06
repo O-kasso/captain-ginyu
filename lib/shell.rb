@@ -10,17 +10,18 @@ cmd.run 'chsh -s /usr/local/bin/bash'
 cmd.run 'yes | /usr/local/opt/fzf/install & '
 
 # ruby
-latest_ruby = cmd.run('rbenv install -l | grep -v - | tail -1 | sed -e "s/^ *//"')
+latest_ruby =
+  cmd.run('rbenv install -l | grep -v - | tail -1 | sed -e "s/^ *//"').out
 cmd.run 'eval "$(rbenv init -)"'
-cmd.run "rbenv install #{latest_ruby} && rbenv global #{latest_ruby}"
+cmd.run "rbenv install #{latest_ruby}"
+cmd.run "rbenv global #{latest_ruby}"
 
 # node
 cmd.run 'npm install -g htmlhint stylelint jshint coffeelint jsonlint pug-lint'
 
 # dotfiles
 cmd.run 'cp "$(brew --prefix git)/etc/bash_completion.d"/* "$HOME"'
-ginyu_path = cmd.run 'git rev-parse --show-toplevel'
-cmd.run %(cp -R #{ginyu_path}/dotfiles/* "$HOME")
+cmd.run 'cp -R ./dotfiles/ "$HOME"'
 
 # reload shell
 cmd.run 'source ~/.bash_profile'
