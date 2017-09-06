@@ -22,6 +22,7 @@ cmd.run 'npm install -g htmlhint stylelint jshint coffeelint jsonlint pug-lint'
 # dotfiles
 cmd.run 'cp "$(brew --prefix git)/etc/bash_completion.d"/* "$HOME"'
 cmd.run 'cp -R ./dotfiles/ "$HOME"'
+cmd.run 'defaults read com.googlecode.iterm2'
 
-# reload shell
-cmd.run 'source ~/.bash_profile'
+# launch iTerm2
+cmd.run 'open -a iTerm'
