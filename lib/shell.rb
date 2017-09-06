@@ -22,8 +22,12 @@ cmd.run 'npm install -g htmlhint stylelint jshint coffeelint jsonlint pug-lint'
 # dotfiles
 cmd.run 'cp "$(brew --prefix git)/etc/bash_completion.d"/* "$HOME"'
 cmd.run 'cp -R ./dotfiles/ "$HOME"'
-cmd.run 'open -a iTerm && pkill iTerm'
-cmd.run 'cp -R ./dotfiles/okasso-iterm-profile ~/Library/Application\ Support/iTerm2/DynamicProfiles/'
-cmd.run 'defaults read -app iTerm'
 
-# launch iTerm2
+# setup and launch iTerm
+# custom profile currently only becomes default if unix username is 'O-kasso'
+# TODO: dynamically set username
+cmd.run 'open -a iTerm'
+cmd.run 'cp -R ./dotfiles/okasso-iterm-profile ~/Library/Application\ Support/iTerm2/DynamicProfiles/'
+cmd.run 'pkill iTerm'
+cmd.run 'defaults read -app iTerm'
+cmd.run 'open -a iTerm'

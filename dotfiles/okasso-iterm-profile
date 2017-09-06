@@ -1,14 +1,12 @@
 {
   "Profiles": [
     {
-      "Working Directory" : "\/Users\/omar",
       "Prompt Before Closing 2" : 0,
       "Selected Text Color" : {
         "Green Component" : 0.9568627450980393,
         "Blue Component" : 0.8627450980392157,
         "Red Component" : 0.9882352941176471
       },
-      "Dynamic Profile Filename" : "\/Users\/O-kasso\/Library\/Application Support\/iTerm2\/DynamicProfiles\/okasso-iterm-profile",
       "Rows" : 25,
       "Ansi 11 Color" : {
         "Green Component" : 0.4071767330169678,
