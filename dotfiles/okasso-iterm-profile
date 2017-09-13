@@ -13,7 +13,7 @@
         "Blue Component" : 0.4385056495666504,
         "Red Component" : 0.3243661820888519
       },
-      "Use Italic Font" : true,
+      "Use Italic Font" : false,
       "Foreground Color" : {
         "Green Component" : 0.5096293091773987,
         "Blue Component" : 0.5168579816818237,
@@ -421,7 +421,7 @@
       "Bound Hosts" : [
         "O-kasso@"
       ],
-      "Non Ascii Font" : "MesloLGM-RegularForPowerline 12",
+      "Non Ascii Font" : "RobotoMonoForPowerline-Regular 12",
       "Ansi 13 Color" : {
         "Green Component" : 0.3389629721641541,
         "Blue Component" : 0.7290843725204468,
