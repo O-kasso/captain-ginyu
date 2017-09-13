@@ -337,7 +337,7 @@
         "Blue Component" : 0.1937013864517212,
         "Red Component" : 0
       },
-      "Default Bookmark" : "No",
+      "Default Bookmark" : "Yes",
       "Cursor Color" : {
         "Green Component" : 0.5096293091773987,
         "Blue Component" : 0.5168579816818237,
@@ -345,7 +345,7 @@
       },
       "Disable Smcup Rmcup" : false,
       "Name" : "O-kasso",
-      "Guid" : "235346574573462374",
+      "Guid" : "5FE22D95-8928-4A97-9910-134C254644C6",
       "Blinking Cursor" : true,
       "Ansi 1 Color" : {
         "Green Component" : 0.1084065511822701,

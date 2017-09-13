@@ -27,7 +27,7 @@ cmd.run 'cp -R ./dotfiles/ "$HOME"'
 # custom profile currently only becomes default if unix username is 'O-kasso'
 # TODO: dynamically set username
 cmd.run 'open -a iTerm'
-cmd.run 'cp -R ./dotfiles/okasso-iterm-profile ~/Library/Application\ Support/iTerm2/DynamicProfiles/'
+cmd.run 'mv -f ~/okasso-iterm-profile ~/Library/Application\ Support/iTerm2/DynamicProfiles/'
 cmd.run 'pkill iTerm'
 cmd.run 'defaults read -app iTerm'
 cmd.run 'open -a iTerm'
