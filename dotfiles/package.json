@@ -1,0 +1,17 @@
+{
+  "name": "o-kasso",
+  "version": "1.0.0",
+  "description": "global dev env configs",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^4.11.0",
+    "eslint-plugin-react": "^7.4.0",
+    "gulp": "^3.9.1",
+    "stylelint": "^8.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

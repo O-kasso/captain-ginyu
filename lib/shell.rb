@@ -16,12 +16,12 @@ cmd.run 'eval "$(rbenv init -)"'
 cmd.run "rbenv install #{latest_ruby}"
 cmd.run "rbenv global #{latest_ruby}"
 
-# node
-cmd.run 'npm install -g htmlhint stylelint jshint coffeelint jsonlint pug-lint'
-
 # dotfiles
 cmd.run 'cp "$(brew --prefix git)/etc/bash_completion.d"/* "$HOME"'
 cmd.run 'cp -R ./dotfiles/ "$HOME"'
+
+# node
+cmd.run 'cd && npm install'
 
 # setup and launch iTerm
 # custom profile currently only becomes default if unix username is 'O-kasso'

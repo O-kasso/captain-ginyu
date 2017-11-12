@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'tty'
-require '../lib/captain-ginyu'
+load 'tty'
+load '../lib/captain-ginyu'
 
